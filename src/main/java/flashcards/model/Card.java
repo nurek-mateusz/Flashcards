@@ -9,8 +9,13 @@ public class Card {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String question;
+
     private String answer;
+
+    @Enumerated
+    @Column(columnDefinition = "integer")
     private Box box;
 
     public Card() {
