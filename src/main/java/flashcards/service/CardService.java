@@ -5,6 +5,7 @@ import flashcards.model.Card;
 import flashcards.repository.CardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class CardService {
         return cardRepository.findByBox(box);
     }
 
+    @Transactional
     public void moveCardToNewBox(long cardID, boolean correctAnswer) {
         Card card = cardRepository.findById(cardID)
                 .orElseThrow(() -> new IllegalArgumentException("Card not exists"));
@@ -36,7 +38,7 @@ public class CardService {
 
         cardRepository.save(card);
     }
-
+    
     public Card saveCard(Card card) {
         return cardRepository.save(card);
     }
