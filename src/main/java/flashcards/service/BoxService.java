@@ -20,9 +20,9 @@ public class BoxService {
         for(int i = 0; i < boxes.length; ++i) {
             if(currentBox == boxes[i]) {
                 if(direction) {
-                    nextBoxIndex = i == 0 ? 0 : i + 1;
+                    nextBoxIndex = i + 1;
                 } else {
-                    nextBoxIndex = i - 1;
+                    nextBoxIndex = i == 0 ? 0 : i - 1;
                 }
                 break;
             }
