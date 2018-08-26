@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { BoxComponent } from './box/box.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { LearningComponent } from './learning/learning.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'box', component: BoxComponent },
   { path: 'add', component: AddCardComponent },
-  { path: 'learn', component: LearningComponent }
+  { path: 'learn/:boxId', component: LearningComponent }
 ];
 
 @NgModule({
@@ -24,6 +25,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ),
+    HttpClientModule,
     BrowserModule
   ],
   providers: [],

@@ -1,3 +1,11 @@
 <p>
   add-card works!
 </p>
+
+<p>Question</p>
+<textarea #question></textarea>
+
+<p>Answer</p>
+<textarea #answer></textarea>
+
+<button (click)="saveCard(question.value, answer.value)">Save</button>

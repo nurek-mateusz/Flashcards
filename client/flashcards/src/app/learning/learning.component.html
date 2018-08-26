@@ -1,3 +1,12 @@
 <p>
   learning works!
 </p>
+
+<p>Box {{boxId}}</p>
+<p>{{currentCard.question}}</p>
+
+<p *ngIf="answer">{{currentCard.answer}}</p>
+
+<button (click)="showAnswer()">Show answer</button>
+<button (click)="getUserAnswer(true)">I know</button>
+<button (click)="getUserAnswer(false)">I don't know</button>
