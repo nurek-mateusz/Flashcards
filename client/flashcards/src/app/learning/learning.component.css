@@ -1,0 +1,78 @@
+.parent {
+    display: flex;
+}
+
+.left, .right {
+    flex: 1;
+    cursor: pointer;
+}
+
+.back-button-arrow {
+    color: black;
+}
+
+.back-button-text {
+    color: white;
+}
+
+.back-button-arrow:hover {
+    color: dodgerblue;
+}
+
+.back-button-text:hover {
+    color: black;
+}
+
+.border {
+    margin: 0.5rem;
+    height: 30rem;
+    border: .1rem solid black;
+    border-radius: .5rem;
+}
+
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.i-know-button {
+    border-radius: 100%; 
+    background-color: #4CAF50; /* Green */
+    color: black;
+    padding: 1.3rem;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.show-answer-button {
+    border-radius: 100%; 
+    background-color: dodgerblue; /* Green */
+    color: black;
+    padding: 1.3rem;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.i-dont-know-button {
+    border-radius: 100%; 
+    background-color: red; /* Green */
+    color: black;
+    padding: 1.3rem;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 5.5rem;
+    height: 5.5rem;
+}

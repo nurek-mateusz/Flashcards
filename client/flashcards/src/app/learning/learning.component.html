@@ -1,12 +1,31 @@
-<p>
-  learning works!
-</p>
+<div class="parent">
+  <div class="left" [routerLink]="['/box']">
+    <div>
+      <span class="back-button-arrow">&lt;<span class="back-button-text"> Dashboard</span></span>
+    </div>
+  </div>
+  <div class="center">Box {{boxId}}</div>
+  <div class="right"></div>
+</div>
 
-<p>Box {{boxId}}</p>
-<p>{{currentCard.question}}</p>
-
-<p *ngIf="answer">{{currentCard.answer}}</p>
-
-<button (click)="showAnswer()">Show answer</button>
-<button (click)="getUserAnswer(true)">I know</button>
-<button (click)="getUserAnswer(false)">I don't know</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm border">
+      <div class="center-content">{{currentCard.question}}</div>
+    </div>
+    <div class="col-sm border">
+        <div class="center-content"><p *ngIf="answer">{{currentCard.answer}}</p></div>
+    </div>
+  </div>
+  <div class="row justify-content-center" style="margin-top: 3rem;">
+    <div class="col-sm-1">
+      <div *ngIf="answer" class="i-know-button center-content" (click)="getUserAnswer(true)"><fa-icon [icon]="check"></fa-icon></div>
+    </div>
+    <div class="col-sm-1">
+      <div class="show-answer-button center-content" (click)="showAnswer()"><fa-icon [icon]="eye"></fa-icon></div>
+    </div>
+    <div class="col-sm-1">
+        <div *ngIf="answer" class="i-dont-know-button center-content" (click)="getUserAnswer(false)"><fa-icon [icon]="times"></fa-icon></div>
+    </div>
+  </div>
+</div>

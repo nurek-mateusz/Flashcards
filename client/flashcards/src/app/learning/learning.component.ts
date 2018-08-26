@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router} from '@angular/router';
 import { CardService } from '../shared/card.service';
 import { Card } from '../shared/card.model';
+import { faCheck, faTimes, faEye } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-learning',
@@ -16,6 +17,10 @@ export class LearningComponent implements OnInit {
   currentCard: Card;
 
   answer = false;
+
+  check = faCheck;
+  times = faTimes;
+  eye = faEye;
 
   constructor(private route: ActivatedRoute, private router: Router, private cardService: CardService) {}
 

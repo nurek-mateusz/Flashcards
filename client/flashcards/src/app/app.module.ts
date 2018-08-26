@@ -7,6 +7,7 @@ import { BoxComponent } from './box/box.component';
 import { AddCardComponent } from './add-card/add-card.component';
 import { LearningComponent } from './learning/learning.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes = [
   { path: 'box', component: BoxComponent },
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
       appRoutes
     ),
     HttpClientModule,
+    FontAwesomeModule,
     BrowserModule
   ],
   providers: [],
