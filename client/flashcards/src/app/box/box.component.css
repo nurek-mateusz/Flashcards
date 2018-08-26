@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center; /* align y */
+    justify-content: center; /* align x */
+}
+
+.box-container {
+    min-height: 50vh;
+    display: flex;
+    flex: 1;
+    align-items: center; /* align y */
+    justify-content: center; /* align x */
+}
+
+.box {
+    border: .1rem solid black;
+    border-radius: .5rem;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 4.5rem;
+    text-align: center;
+    transition: all .2s;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    transform: scale(1.3);
+}
+
+.green-button {
+    background-color: green;
+    margin: .5rem;
+    padding: .3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.green-button:hover {
+    background-color: greenyellow;
+}

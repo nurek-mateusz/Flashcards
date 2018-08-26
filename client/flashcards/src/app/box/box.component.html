@@ -1,9 +1,10 @@
-<p>
-  box works!
-</p>
-
-<a [routerLink]="['/learn/1']">Box 1</a>
-<a [routerLink]="['/learn/2']">Box 2</a>
-<a [routerLink]="['/learn/3']">Box 3</a>
-<a [routerLink]="['/learn/4']">Box 4</a>
-<a [routerLink]="['/learn/5']">Box 5</a>
+<div class="box-container">
+  <div class="box" [routerLink]="['/learn/1']">Box 1</div>
+  <div class="box" [routerLink]="['/learn/2']">Box 2</div>
+  <div class="box" [routerLink]="['/learn/3']">Box 3</div>
+  <div class="box" [routerLink]="['/learn/4']">Box 4</div>
+  <div class="box" [routerLink]="['/learn/5']">Box 5</div>
+</div>
+<div class="container">
+  <div class="green-button" [routerLink]="['/add']">Add flashcard</div>
+</div>
