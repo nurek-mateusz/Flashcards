@@ -1,11 +1,29 @@
-<p>
-  add-card works!
-</p>
+<div class="parent">
+  <div class="left" [routerLink]="['/box']">
+    <div>
+      <span class="back-button-arrow">&lt;<span class="back-button-text"> Dashboard</span></span>
+    </div>
+  </div>
+  <div class="center">Add card</div>
+  <div class="right"></div>
+</div>
 
-<p>Question</p>
-<textarea #question></textarea>
-
-<p>Answer</p>
-<textarea #answer></textarea>
-
-<button (click)="saveCard(question.value, answer.value)">Save</button>
+<div class="container">
+  <div class="row">
+    <div class="col-sm text-align-center">Question</div>
+    <div class="col-sm text-align-center">Answer</div>
+  </div>
+  <div class="row">
+    <div class="col-sm border">
+      <textarea #question class="fill-parent"></textarea>
+    </div>
+    <div class="col-sm border">
+      <textarea #answer class="fill-parent"></textarea>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-1 center-content">
+      <div class="save-button" (click)="saveCard(question.value, answer.value)"><fa-icon [icon]="save"></fa-icon></div>
+    </div>
+  </div>
+</div>

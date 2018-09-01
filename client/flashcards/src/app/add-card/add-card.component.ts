@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CardService } from '../shared/card.service';
 import { Card } from '../shared/card.model';
+import { faSave } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-add-card',
@@ -9,6 +10,8 @@ import { Card } from '../shared/card.model';
   styleUrls: ['./add-card.component.css']
 })
 export class AddCardComponent implements OnInit {
+
+  save = faSave;
 
   constructor(private cardService: CardService) { }
 
