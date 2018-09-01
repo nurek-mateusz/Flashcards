@@ -76,3 +76,14 @@
     width: 5.5rem;
     height: 5.5rem;
 }
+
+.i-know-button:hover {
+    background-color: rgba(76, 175, 79, 0.7);
+}
+.show-answer-button:hover {
+    background-color: rgba(30, 143, 255, 0.7);
+}
+
+.i-dont-know-button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+}
